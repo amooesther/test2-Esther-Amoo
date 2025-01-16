@@ -1,4 +1,4 @@
-import NavBar from "./Components/NavBar"
+
 import LandingPage from "./LandingPage"
 
 

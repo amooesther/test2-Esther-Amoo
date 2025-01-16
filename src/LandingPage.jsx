@@ -3,6 +3,7 @@ import logo from '../src/assets/logo.png';
 import hero_img from '../src/assets/hero_img.webp';
 import main_img from '../src/assets/main_img.webp';
 import coach from '../src/assets/coach.jpeg';
+import webinar1 from '../src/assets/webinar1.jpeg';
 
 function LandingPage() {
   return (
@@ -49,30 +50,37 @@ function LandingPage() {
       {/* Content Section */}
       <main className="max-w-6xl mx-auto px-5 py-10 space-y-8">
         {/* Webinar Details */}
-        <section id="details" className="bg-white shadow-lg rounded-lg p-6">
-          <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
-            <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold text-black">Specially designed for individuals who:</h2>
-              <ul className="list-disc ml-6 mt-4 space-y-2">
-                <li>Feel drained and overwhelmed by daily stress.</li>
-                <li>Want to feel confident, healthy, and revitalized from the inside out.</li>
-                <li>Struggle with achieving balance and consistency in their wellness journey.</li>
-              </ul>
-              <p className="mt-6 font-semibold">
-                Date: <span className="text-gold">Wednesday, 17th January 2025</span>
-              </p>
-              <p className="font-semibold">
-                Time: <span className="text-gold">7 PM WAT Prompt</span>
-              </p>
-              <button className="mt-6 bg-yellow-400 hover:bg-yellow-200 hover:text-black py-2 px-4 rounded-md font-bold text-lg">
-                Reserve My Free Spot Now!
-              </button>
-            </div>
-            <div className="md:w-1/2">
-              <img src={main_img} alt="Webinar Details" className="rounded-lg shadow-lg" />
-            </div>
-          </div>
-        </section>
+<section id="details" className="bg-white shadow-lg rounded-lg p-6 md:p-12">
+  <div className="flex flex-col md:flex-row items-center md:space-x-12 space-y-6 md:space-y-0">
+    <div className="md:w-1/2">
+      <h2 className="text-3xl font-bold text-black mb-4">
+        Specially designed for individuals who:
+      </h2>
+      <ul className="list-disc ml-6 mt-4 space-y-2">
+        <li>Feel drained and overwhelmed by daily stress.</li>
+        <li>Want to feel confident, healthy, and revitalized from the inside out.</li>
+        <li>Struggle with achieving balance and consistency in their wellness journey.</li>
+      </ul>
+      <div className="mt-6 space-y-4">
+        <p className="font-semibold">
+          Date: <span className="text-gold">Wednesday, 17th January 2025</span>
+        </p>
+        <p className="font-semibold">
+          Time: <span className="text-gold">7 PM WAT Prompt</span>
+        </p>
+      </div>
+      <button className="mt-6 bg-yellow-400 hover:bg-yellow-200 hover:text-black py-3 px-6 rounded-md font-bold text-lg transition-all duration-300">
+        Reserve My Free Spot Now!
+      </button>
+    </div>
+    
+    {/* Image Section */}
+    <div className="md:w-1/2">
+      <img src={webinar1} alt="Webinar Details" className="rounded-lg shadow-lg w-full object-cover h-full" />
+    </div>
+  </div>
+</section>
+
 
         {/* Coach Introduction */}
         <section id="coach" className="bg-black text-white rounded-lg p-6 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
@@ -99,14 +107,40 @@ function LandingPage() {
           </ul>
         </section>
 
-        {/* Testimonials */}
-        <section id="testimonials" className="bg-yellow-400 text-white shadow-lg rounded-lg p-6">
-          <h2 className="text-3xl font-bold text-gold">What others are saying:</h2>
-          <blockquote className="mt-4 italic border-l-4 border-gold pl-4">
-            "I never knew wellness could be this simple! My energy is back, my skin glows, and I feel amazing. Thank you for helping me transform my health!"
-          </blockquote>
-          <p className="mt-2 font-semibold text-gold">- Amina Balogun</p>
-        </section>
+       {/* Testimonials */}
+       <section id="testimonials" className="bg-yellow-400 text-white shadow-lg rounded-lg p-8 md:p-12">
+  <h2 className="text-3xl font-bold text-gray-700 text-center mb-8">
+    What people are saying:
+  </h2>
+
+  <div className="flex flex-wrap justify-center gap-8">
+    {/* Testimonial 1 */}
+    <div className="bg-white text-black rounded-lg p-6 shadow-lg w-full sm:w-80 md:w-96">
+      <blockquote className="italic border-l-4 border-yellow-400 pl-4 mb-4">
+        "I never knew wellness could be this simple! My energy is back, my skin glows, and I feel amazing. Thank you for helping me transform my health!"
+      </blockquote>
+      <p className="font-semibold text-yellow-400">- Amina Balogun</p>
+    </div>
+
+    {/* Testimonial 2 */}
+    <div className="bg-white text-black rounded-lg p-6 shadow-lg w-full sm:w-80 md:w-96">
+      <blockquote className="italic border-l-4 border-yellow-400 pl-4 mb-4">
+        "The wellness program has been a game-changer! I’ve never felt more in control of my health, and I’m so grateful for this journey."
+      </blockquote>
+      <p className="font-semibold text-yellow-400">- Chinedu Okafor</p>
+    </div>
+
+    {/* Testimonial 3 */}
+    <div className="bg-white text-black rounded-lg p-6 shadow-lg w-full sm:w-80 md:w-96">
+      <blockquote className="italic border-l-4 border-yellow-400 pl-4 mb-4">
+        "From feeling drained and stressed to energized and balanced, this program has truly helped me turn my life around. Highly recommend!"
+      </blockquote>
+      <p className="font-semibold text-yellow-400">- Sarah Johnson</p>
+    </div>
+  </div>
+</section>
+
+
 
         {/* Final CTA */}
         <section id="cta" className="text-center bg-black text-white py-10 rounded-lg">
